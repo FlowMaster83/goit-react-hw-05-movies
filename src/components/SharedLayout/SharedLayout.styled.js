@@ -1,10 +1,11 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   padding: 0 16px;
+  
 `;
 
 export const Header = styled.header`
@@ -15,7 +16,7 @@ export const Header = styled.header`
   padding: 15px 0;
   margin-bottom: 16px;
   border-bottom: 1px solid orangered;
-
+  
   > nav {
     display: flex;
   }
@@ -28,6 +29,7 @@ export const Link = styled(NavLink)`
   color: black;
   font-weight: 700;
   font-size: 24px;
+
   &.active {
     color: white;
     background-color: orangered;

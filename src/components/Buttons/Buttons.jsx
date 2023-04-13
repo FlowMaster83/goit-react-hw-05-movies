@@ -1,4 +1,4 @@
-import { Button } from '../../pages/Movies/Movies.styled';
+import { Button } from "../../pages/Movies/Movies.styled"; 
 import propTypes from 'prop-types';
 
 export const Buttons = ({ page, totalPages, handlePageChange }) => {
@@ -12,24 +12,20 @@ export const Buttons = ({ page, totalPages, handlePageChange }) => {
         display: 'flex',
         justifyContent: 'flex-start',
         margin: 10,
-        alignItems: 'space-between',
+        alignItems: 'space-between'
       }}
     >
       <Button
-        style={{
-          marginRight: 10,
-        }}
+      style={{
+        marginRight: 10,
+      }}
         disabled={page === 1}
         onClick={() => handlePageChange(page - 1)}
-      >
-        &#8249; Previous
-      </Button>
+      >&#8249; Previous</Button>
       <Button
         disabled={page === totalPages}
         onClick={() => handlePageChange(page + 1)}
-      >
-        Next &#8250;
-      </Button>
+      >Next &#8250;</Button>
     </div>
   );
 };

@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.form`
   margin-bottom: 16px;
 `;
 
 export const Header = styled.h1`
-  color: orangered;
-  margin: 1rem 0px;
-  display: block;
+    color: orangered;
+    margin: 1rem 0px;
+    display: block;
 `;
 
 export const Input = styled.input`

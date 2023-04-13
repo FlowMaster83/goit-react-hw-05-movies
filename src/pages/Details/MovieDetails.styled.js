@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import propTypes from 'prop-types';
 
 export const Wrapper = styled.div`
-  max-width: 1200px;
+ max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
   &::before {
@@ -23,11 +23,9 @@ export const Wrapper = styled.div`
     left: -5px;
     width: calc(100% + 10px);
     height: calc(100vh + 10px);
+    
 
-    background-image: ${props =>
-      props.backdrop
-        ? `url('https://image.tmdb.org/t/p/w500/${props.backdrop}')`
-        : 'none'};
+    background-image: ${props=> props.backdrop ? (`url('https://image.tmdb.org/t/p/w500/${props.backdrop}')`) : ("none")};
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +33,8 @@ export const Wrapper = styled.div`
     filter: blur(5px);
     z-index: -1;
     opacity: 0.35;
-  }
-`;
+  };
+  `;
 
 export const Card = styled.div`
   display: flex;
@@ -89,12 +87,12 @@ export const Overview = styled.span`
 export const Genres = styled.ul`
   display: flex;
   flex-direction: row;
-`;
+`
 export const Genre = styled.li`
   font-size: 1rem;
   font-weight: 400;
   margin-right: 5px;
-  &:last-child {
+  &:last-child{
     margin: 0;
   }
 `;
@@ -112,5 +110,5 @@ export const Item = styled.li`
 `;
 
 Wrapper.propTypes = {
-  backdrop: propTypes.string,
-};
+    backdrop: propTypes.string,
+  };

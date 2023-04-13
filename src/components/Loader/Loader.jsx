@@ -1,11 +1,12 @@
-import { Triangle } from 'react-loader-spinner';
+import { Triangle } from  'react-loader-spinner'
 
-const Loader = () => (
-  <Triangle
+ const Loader = ()=>(
+    <Triangle
     height="160"
     width="160"
     color="#4fa94d"
     ariaLabel="triangle-loading"
+
     wrapperStyle={{
       display: 'flex',
       justifyContent: 'center',
@@ -20,7 +21,7 @@ const Loader = () => (
       zIndex: '9999',
     }}
     visible={true}
-  />
+    />
 );
 
 export default Loader;
